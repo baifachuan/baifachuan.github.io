@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>疯狂的程序员(二) | 惊帆的BLOG</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="4 linux
+学校开设了一门课程，叫linux编程，使用的是红旗，是在虚拟机里面运行的，当时老师足足的花了1节课试图向大家讲明虚拟机到底是个什么东西，怎么用，很多人还是不懂，甚至表示以后懒得学了，惊帆对这个东西确充满了好奇，因为他觉得这个太神奇了，很多人不是担心计算机中毒么，如果有些操作在虚拟机里面搞，搞完了把虚拟机删掉，不就安全多了，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="疯狂的程序员(二)">
+<meta property="og:url" content="http://blog.bucry.com/2016/07/19/疯狂的程序员-二/index.html">
+<meta property="og:site_name" content="惊帆的BLOG">
+<meta property="og:description" content="4 linux
+学校开设了一门课程，叫linux编程，使用的是红旗，是在虚拟机里面运行的，当时老师足足的花了1节课试图向大家讲明虚拟机到底是个什么东西，怎么用，很多人还是不懂，甚至表示以后懒得学了，惊帆对这个东西确充满了好奇，因为他觉得这个太神奇了，很多人不是担心计算机中毒么，如果有些操作在虚拟机里面搞，搞完了把虚拟机删掉，不就安全多了，">
+<meta property="og:updated_time" content="2016-08-02T01:14:45.561Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="疯狂的程序员(二)">
+<meta name="twitter:description" content="4 linux
+学校开设了一门课程，叫linux编程，使用的是红旗，是在虚拟机里面运行的，当时老师足足的花了1节课试图向大家讲明虚拟机到底是个什么东西，怎么用，很多人还是不懂，甚至表示以后懒得学了，惊帆对这个东西确充满了好奇，因为他觉得这个太神奇了，很多人不是担心计算机中毒么，如果有些操作在虚拟机里面搞，搞完了把虚拟机删掉，不就安全多了，">
+  
+    <link rel="alternative" href="/atom.xml" title="惊帆的BLOG" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://www.bucry.com/usr/uploads/2016/07/3230441803.jpeg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">惊帆</a></h1>
+		</hgroup>
+
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>Menu</li>
+						<li>Tags</li>
+						
+						<li>Links</li>
+						
+						
+						<li>Über</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+							<li><a href="/tags/长篇小说">长篇小说</a></li>
+				        
+							<li><a href="/tags/中篇小说">中篇小说</a></li>
+				        
+							<li><a href="/tags/短篇小说">短篇小说</a></li>
+				        
+							<li><a href="/tags/散文短篇">散文短篇</a></li>
+				        
+							<li><a href="/tags/诗歌赋词">诗歌赋词</a></li>
+				        
+							<li><a href="/tags/恐怖悬疑">恐怖悬疑</a></li>
+				        
+							<li><a href="/tags/疯狂的程序员">疯狂的程序员</a></li>
+				        
+							<li><a href="/tags/我是一个鬼卒">我是一个鬼卒</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/bucry/" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="https://github.com/bucry/" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="https://github.com/bucry/" title="rss">rss</a>
+					        
+								<a class="zhihu" target="_blank" href="https://github.com/bucry/" title="zhihu">zhihu</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/恐怖悬疑/" style="font-size: 10px;">恐怖悬疑</a> <a href="/tags/我是一个鬼卒/" style="font-size: 17.5px;">我是一个鬼卒</a> <a href="/tags/散文短篇/" style="font-size: 15px;">散文短篇</a> <a href="/tags/疯狂的程序员/" style="font-size: 12.5px;">疯狂的程序员</a> <a href="/tags/诗歌赋词/" style="font-size: 10px;">诗歌赋词</a> <a href="/tags/长篇小说/" style="font-size: 20px;">长篇小说</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.bucry.com">惊帆的博客</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">重剑无锋，大巧不工</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">惊帆</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="http://www.bucry.com/usr/uploads/2016/07/3230441803.jpeg" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">惊帆</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+					<li><a href="/tags/长篇小说">长篇小说</a></li>
+		        
+					<li><a href="/tags/中篇小说">中篇小说</a></li>
+		        
+					<li><a href="/tags/短篇小说">短篇小说</a></li>
+		        
+					<li><a href="/tags/散文短篇">散文短篇</a></li>
+		        
+					<li><a href="/tags/诗歌赋词">诗歌赋词</a></li>
+		        
+					<li><a href="/tags/恐怖悬疑">恐怖悬疑</a></li>
+		        
+					<li><a href="/tags/疯狂的程序员">疯狂的程序员</a></li>
+		        
+					<li><a href="/tags/我是一个鬼卒">我是一个鬼卒</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/bucry/" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="https://github.com/bucry/" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="https://github.com/bucry/" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="https://github.com/bucry/" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-疯狂的程序员-二" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/07/19/疯狂的程序员-二/" class="article-date">
+  	<time datetime="2016-07-19T04:56:56.000Z" itemprop="datePublished">2016-07-19</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      疯狂的程序员(二)
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/疯狂的程序员/">疯狂的程序员</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/长篇小说/">长篇小说</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>4 linux</p>
+<p>学校开设了一门课程，叫linux编程，使用的是红旗，是在虚拟机里面运行的，当时老师足足的花了1节课试图向大家讲明虚拟机到底是个什么东西，怎么用，很多人还是不懂，甚至表示以后懒得学了，惊帆对这个东西确充满了好奇，因为他觉得这个太神奇了，很多人不是担心计算机中毒么，如果有些操作在虚拟机里面搞，搞完了把虚拟机删掉，不就安全多了，<a id="more"></a>所以他听的特别认真，而老师似乎也发现了这个人，于是特意过来关照关照，讲到linux的时候，很多人发现根本不会玩这个，因为大部分的讲解，都是靠命令完成，课本也不会说右键选择创建一个空文件，而是直接告诉你要使用touch，可是这个时间惊帆更加兴奋了，不是因为它是黑乎乎的窗口，而是因为大家都不会，并且所有人都觉得很难，要么做第一个，要么做最好的一个，这就是他的思想，之前一直觉得黑乎乎的窗口是很丑的，现在突然发现原来黑乎乎的窗口也很好看，很漂亮，特别是输入top的时候，看着那不动变动的数字，然后把它全屏化，简直是美极了，小时候看电影的时候，凡是黑客不都是在一个黑乎乎的窗口，就把某某系统黑了么，于是他很认真的听着，不停的背着ls是列出文件夹下所有的文件，mkdir是创建文件夹，rmdir是删除空的文件夹，上了几次课，惊帆更加的喜欢linux，相反的是，其他人对这个系统完全不感兴趣，因为这个上面不但没发打游戏，连个qq都装不上，于是所有人都睡觉了，老师也就照本宣科的讲，这时候惊帆突然问了一个问题，就是所有的东西在linux都是映射成文件，那么它能够实现windows下的把一个硬盘逻辑分区吗。虽然问题很简单，但是老师当时一下就精神了，你想老师讲课，当然希望学生提问，学生越问，自己越有成就感，但是所有的学生都毫无激情，老师自然就没激情了，一副众人皆醉我独醒的样子，而这个时候突然有人和自己一样醒着，老师自然就有兴趣了，然后很详细的解答了这个问题，一来二去的惊帆和老师混的很熟，甚至很多次还把惊帆的shell脚本作业发给别人和其他学院的同学，作为参考的答案。</p>
+<p>惊帆给自己的电脑上装了vmware，然后到处去下载红旗的镜像，装了好几次，发现都不好，反正就是装不上，于是干脆去找其他linux，装了一个redhat9，然后后来的时间，差不多每天几乎都是在linux里面学习，可是虚拟机毕竟是虚拟机，在本来性能不是很差的笔记本上，性能更差了，另外虚拟机里面对硬件支持也不是很好，加上redhat9的库很老旧，安装软件非常麻烦。于是这个时候惊帆决定做一件事，把主机换成linux，这是一个非常大胆的决定，大到惊帆都觉得自己没有把握，但是他还是决定这样做了，可能是受曾经被远程控制的影响，加上大家都说linux开源，虽然惊帆知道他自己根本看不懂linux源码，但是看不懂和看不到那是两码事，所以人啊，很多时候就是贪心，明明知道自己不会用的东西，可是还是希望自己拥有。他又去买了一个1t的移动硬盘，把自己电脑里的东西挨个整理拷贝出来，既然要换系统，就换最好的，啥系统最好？当然是红帽子，那时候红帽子6已经出来了很久，但是每次更新软件的时候，都要求输入账号，而账号需要给钱，都说linux是免费开源的，但是更新软件又要收费，那时候惊帆一直搞不懂开源免费和服务收费到底是个什么东西，但是要收费，那就不用它，因为太贵，用不起，于是用了另外一个centos，当时还有另外一个选择，ubuntu，但是惊帆看了它的一张图片，不知道是谁发的，哪儿是像windows，简直就是windows，所以毅然决然的选择了centos，这是一个很冒险的做法，首先要学会如何装操作系统，光是装操作系统，惊帆就花了整整1天天，重装了6次，原因都在于他时使用u盘安装，然后把mbr烧到了u盘，导致不插u盘，无法开机，那时候惊帆还不太明白什么mbr啊，引导扇区啊，只能在网上搜索，不插u盘，无法开机等等关键字，经过一天的折腾，系统好歹可以用了，从此以后惊帆的电脑，一只都是linux，一用就是多年。换系统的另一方面他也不想玩游戏了，说不玩，就不玩，于是他卖了游戏账号，账号的钱正好交了一年的学费。这个时候，大一结束了。</p>
+<p>5 暑假</p>
+<p>大一的暑假，惊帆没有回家，大一末的时候，学院发了选课通知，大意是让学生在java和c+中选择一个，正好趁着暑假，好好看看这些，在他的印象里，java仅限于诺基亚手机里的java小游戏，所以大部分时间，他都在图书馆，图书馆是学校最为得意的东西，据说是学校的镇宝之物，里面的书籍是相当丰富，于是他就在里面翻遍了所有的java相关的书籍，花了好几天他才弄清楚java,jdk,jvm,jre之间的区别，一旦弄清楚之后，他觉得也不过而而，很多时候觉得很多东西很难，其实不是东西难，而是内心惧怕去了解它，一旦了解了，那么所有的事情都不过尔尔，所以惊帆就在他的linux下载了jdk弄好了开发环境，因为他决定选择java，暑假里面大多数时候，他都在图书馆闷头研究java，但是因为是暑假，图书馆不是全天开放，所以有时候进不去，于是他就带着笛子去学校的一个小竹林吹笛子去，本来以为会有路过的姑娘驻足，结果去了几次后周围跳广场舞的大妈和大爷慢慢的向他开始靠拢，后来干脆直接坐他旁边了，于是他不去了，全部埋头专研java，笛子是他从小就玩的一个乐器，一直坚持自己要有一个音乐细胞，那时候看过一篇文章，写的是人一定要有三个计划，A，B和Z计划，a计划用来作为当前的谋生之路，b计划用于a计划失败后的备份，z计划用于a和b都失败了，保证最低不会给饿死，惊帆觉得这个很有道理，于是把音乐定位z计划，就算以后失业去大街要饭那也叫卖艺，不叫乞讨。</p>
+<p>惊帆的java入门知识，基本是从李刚的那本疯狂java讲义中学来的，书中李刚提到一句话：很多年前，大家需要一个工具，就自己做一个，现在很多人需要一个工具，就从网上下一个，很难说软件到底是在进入还是在后退。但是看久了他也能发现书里有一些地方是不合理的，例如李刚说java里面的Hashtable，的第二个t应该大写，书中他还提到曾经给sun发过邮件，建议将第二个t大写。在李刚的很多书里，都提到这个小写的t，他后来将其归结于开发jdk的人的一个误操作，但是为了兼容性又不便纠正，可是后来惊帆在sun的一个页面看到一句话：所有复合词在任何大小写样式中都视为一个完整单词，例如，hashtable是一个紧凑格式的复合词，应将其视为一个单词并相应地确定大小写。所以，这里本来就是应该小写，看来人家sun并没有做错。</p>
+<p>自打电脑换了linux系统后，为了打造成一个人可以用的系统，惊帆还真耗费了不少的精力，首先带着个耳机，一边写代码，一边听歌，或者偶尔拿着电脑看看电影，是在正常不过了，可是偏偏这么个小事，惊帆还搞了很久，首先音乐播放器，找了很久，也不知道是运气差还是怎么的，好几个播放器都只能播放wav没办法播放mp3，电影就别提了，avi和rmvb，根本没有可以打开的播放器，于是一狠心，干脆自己做一个吧，那时候sun有一个框架叫jmf框架，专门用来应对java处理多媒体的库，于是惊帆就用它活生生的做了一个和酷狗一摸一样的音乐播放器，还带媒体库，当然媒体库是直接调用多米音乐的，后来惊帆知道其实linux下是有很多不错的播放器，比如Rhythmbox就很不错，可是自己已经做完了，并且也不差，于是干脆就一直用自己的播放器，除此之外，惊帆还为自己的系统做了多线程断点下载器，以及视频播放器等等小玩具，有时候惊帆也想，就是那个写疯狂java的李刚，他有亲自的做过这些东西么，他也不过如此云云，于是自己也飘飘然起来。然后他又把这几个软件，用exe4j打包成exe发给其他人看，唯一不足的就是jre打包进去，本来一个几mb的东西硬是给弄到了近百mb，在程序员里面很流行的一句话，就是不要重复造轮子，可惊帆不这样想，不但要重复造，还要造的比别人好，如果不重复造轮子，那么你就丧失了发明一个新轮子的机会，所以很多时候惊帆都在重复的造着轮子，并且乐在其中。所以啊，很多时候那些重复造轮子的程序员，才是值得尊敬的，因为他们乐在其中，享受这个过程，这才是真的热爱这个职业，这个事情。</p>
+<p>在暑假后惊帆义无反顾的在java的课程后面打了勾，当然这个结果他还是比较过的，为啥不选c++呢，当时只要一提到c语言大家想到的就是vc6，一提到c++大家想到的就是微软，搞得惊帆自己都认为c++就是微软的，而我一个linux派系岂能玩微软的东西，而java不是号称跨平台么，于是坚定了选java，结果放眼一眼，整个java那边只有他一个人的名字，其他的全是c++的，不知道当时谁透露的消息是只要精通了c++，分分钟就会了java，还有就是c++以后的工资比java高很多，但是他还是在java里面写了自己的名字，后来陆陆续续又有几个人，也放弃c++选了java，当然宿舍的里的小鸡也选了java，为啥，因为惊帆选择了java，这样他选择java至少不会挂科，在他的眼里惊帆就是大神，所以跟着大神肯定是不会错的，小鸡这个人，惊帆一直觉得是一个很神奇的人，他可以默默的对着电脑用手机看小说看整整一天，能够从周五下午睡觉睡到周日下午，一天周六有人敲门，惊帆去开门后只见管理员阿姨站在门口，手里提着饭说是找小鸡，他定的饭，这件事后来成为所有人调侃他的话柄，说小鸡是学校唯一一个能够让宿舍管理员亲自送饭到床上的人。</p>
+<p>6.半路杀出的培训班<br>一天辅导员在qq群里发了一则消息，大意是有一个公司，要到学校开一个专门的java培训班，是需要面试的，过关的人，就可以加入培训班，这个时候惊帆心动了，因为一个人研究太痛苦了，当年就是没有人指导，自己绕了很多弯路，而自己学习java一直都是一个人在琢磨，因为找不到知音，大神每天按时在宿舍打坐，打坐的时间比他学习的时间还多几倍，小鸡就更不用说了，他基本上只会说：嗯，哦，啊。所以对着小鸡说话就像对着一个木头一样了，你没法和木头去讨论为什么静态代码块在构造器前面执行，普通代码块在构造器后面之行，另外一个原因是培训班就开在学校内部，学校专门在一个教学楼，腾出整层楼作为上课用的场所，基本上来说就是学校和公司联手合作的，看起来十分的官方，甚至整层楼都贴上了对方公司的logo，所以惊帆打算去。</p>
+<p>上课时间是在周末两天，人数差不多有50多人，于是分了两个班，惊帆和很多人的思想不一样，参加这个培训班他是带着自己的小九九的，别人参加是因为真的是自己完全不懂，希望这样专业的培训能够提高自己的能力，避免挂科，所以很多人的思想，在惊帆看来就是错的，因为能够提高自己能力的，只有自己，如果自己不努力，别人再怎么帮你也无济于事，可是很多人就是不明白这个理，一味的怪老师没教好。可惊帆不一样，对于惊帆来说，虽然自己的能力并不是多么的优秀，但是应付学习的考试，那可是闭着眼睛也会过的，他希望和别人接触接触，看看人家平时在公司是怎么工作的。</p>
+<p>那些抱着希望通过培训提高自己的那些人，一到上课就开始昏昏欲睡，于是惊帆一边嘲笑着他们一边听着课，下课后赶紧去找老师私聊一会儿，递一根烟，然后就开始聊了，好在老师也是一个烟鬼，不但是个烟鬼，简直是个大烟鬼，他抽烟的时候，你能够看到烟成指数的速度递减，抽烟的空闲是最好的闲聊的时刻，烟鬼和烟鬼，格外的话多，慢慢的和老师混熟了，然后惊帆后面就不用每次都给老师递烟了，而老师每次会给他丢根烟过来，这里惊帆是算过的，一包烟，怎么着也的十块钱，投资太多，不划算，所以一旦混熟后，就立即停止投入。本来是两个人的聊天，后来慢慢的又加入了一个人，也是通过递烟的方式加入的，所以啊，烟有时候也真是个好东西，本来没话说，递根烟，一下就有话说了，这个人成了后来惊帆随时一块谈技术的对象，惊帆叫他大爷，因为他看起来就像大爷一样，就像古代的地主，所以惊帆一致叫他大爷，他也加入了培训班，而且就坐他身边。通过和老师的聊天，惊帆又懂得了很多东西，比如如何使用svn或者git，那时候惊帆第一次听到svn协同开发工具这个东西，要知道老师讲课的时候，都是通过拷贝jar的方式，多年后每次只要是学生来面试，惊帆都会问，你们试用过协同开发工具吗，可惜基本上所有的人，都没听过这是个什么东西，看来大学讲的东西，和实践起来，还是有一定的差距，如果大学上程序课，让学生提交代码的时候，给每个组一个branch，然后挨个checkout看他们的代码，通过看log就能过发现谁写了代码，谁的代码能力最强，根本不用在检查作业的时候去问你做了啥他做了啥，不过很多时候，大概是因为老师平时基本上也不用这些工具吧，所以就干脆忽略了。</p>
+<p>一天惊帆在看一本从图书馆借来的jms的书籍，老师说这种书暂时不用看，去看看think in java吧，于是惊帆去找了这本书，好书就是好书，好的书，就像是美女，不管时间多久，始终会让人眼前一亮，所以这本书他一直带着，有事没事就看看，而这位老师，由于是第一次上课，可以说是一个标准的程序员，自然和学校的老师是有很大区别的，在代码方面十分的苛刻，但是怎奈下面听课的大部分人，都没有一点程序细胞，用他的话说就是，孺子不可教也。有时候他也会去指点指点其他人：</p>
+<p>“你这个对象的构造器应该是私有的”<br>“构造器是什么东西？”<br>“你父类重写了构造器，系统不再提供无参构造器，子类需要先调用super初始化父类”<br>“super是什么意思”<br>“。。。。”</p>
+<p>时间久了他也懒得去再看了，这个时候惊帆又开始同情老师了，想到大学的老师，之前惊帆也一度抱怨这些老师，简直就是个复读机，可是现在他不这样认为了，因为下面坐着的人，让上面的人称为了复读机，而老师要一年又一年的像个复读机一样的去讲课，也真不容易。在讲spring的时候老师问道：</p>
+<p>“有谁知道spring aop是根据什么机制实现的”<br>“动态代理”，惊帆随口说道。</p>
+<p>打那以后，有时候老师也就直接来找到惊帆和大爷聊天，好像终于有一个能够听得懂我说话的人了，而大家在一起聊天的时候，基本谈的都是程序都是代码，彷佛怎么也说不完一样。培训老师彷佛给惊帆指点了很多迷津，于是后面只要有空，他就在图书馆写代码，把所有能够想到的东西，全部用代码去实现一遍，想不到了，就照着图书馆书里的例子，挨着敲一边，用他的话说，只要是java的书籍，你说出名字，我立马告诉你它在哪个书架上，当时学校有地方专门通宵，他每周都会在里面通宵好几天，有时候他都不知道为什么要去通宵但是还是去了，去了没啥事，那就继续写代码呗，有时候行为可以驱动精神的，当你精神上不想做某件事情的时候，可以身体先行动，到那个点，精神自然就会思考了。另外也许是受网上说的，程序员在深夜最有灵感的影响，有没有灵感惊帆不知道，但是深冬冬的要命倒是真实的。</p>
+<p>后来没有过多久，接到通知，说是根据学生反馈，这位老师讲课讲授的不好，被fire了，果然后面老师再也没有来了，听到这个消息，大爷和惊帆感到非常的不值，因为老师讲的很好，只是要求比较高，后来惊帆知道老师也离职了，虽然不知道是因为老师离职，然后机构干脆给出被fire的消息，免得自己的面子无光，还是真是直接的被fire了，在后面来的老师，那简直就是和大学老师一个模子刻出来的，也许他是吸取之前的老师的教训，基本上一个课程下来，只说两句话：“同学们，上课了”，“同学们，吃饭了”。然后其余时间就直接放录制好的教学视频，大爷抱怨的最厉害：</p>
+<p>“我考，这个老师每天都说这两句话，就特么可以封装成方法直接调用了”。</p>
+<p>7不一样的英语课</p>
+<p>英语课一向是惊帆的软肋，几乎只要是英语课，全部挂了，有一门英语课，因为是好几项考核按照百分比算成绩，居然是59.3，四舍五入就成59了，于是他也挂了，他开始愤愤不平了，因为这节英语课他算是去的最多的，可能是因为那个老师长得还挺年轻漂亮，可是让他挂了，都说每人蛇蝎心肠，现在他还真信了，不过虽然去上了英语，他带着的几本都是java编程思想，或者就是java加密与解密，虽然他知道，凭着自己的毅力，像写程序一样的去学英语，必然能够达到一个不至于挂科的水平，但是他仔细衡量过，首先，以他几乎只剩下只能读懂26个英语字母的水平，开始学英语，最终只能达到一个和普通人一样的水平，而时间经过这样的切分，自己无论从精力还是时间上来说，投入到写程序里面的时间都会大大的减少，所以他决定先把自己的程序能力练到炉火纯青再说，这样，至少自己有一样杀手锏，不至于样样会，样样不精，这样的人实在是太多了，他不想成为其中的一员。所以他说，英语嘛，不过是一门语言，你说的再好也不如美国大街上要饭的说的好，有朝一日我去美国呆个1年半载还丑不会说几句英语？于是他继续坚定的写程序。当时他看了一段笑话，大意是无论玉帝说什么，如来都说你被猴子打过，他觉得这个很好笑，所以他希望有一天，他也能够说，我程序很牛，就够了。</p>
+<p>转眼又到选课的时间了，英语课学校有明确的等级，那就是过了四级的选这个，过了六级的选那个，四级没过的，就安心的选你的基础英语吧，等级分明，对照着选课，如果选错了，是没有学分的，而对于惊帆来说，有两种情况他是从来很淡定的，第一是胸有成竹，第二是死定了，所以他干脆选择了等级最高的那个课程，如果你知道你肯定是要死的，那么你是选择被一个野狗咬死呢，还是被一头森林之王的老虎咬死。就算挂了，他以后都可以说，我选择了全校最难的英语课，结果挂了，也许这样别人还会投来崇拜的眼神，而如果你给别人说，我选择了最简单的英语，挂了，人家肯定看不起你。想到这些，他在最难的英语后面，写了自己的名字，据说这个英语的考试方式是一个没有字幕的视频，每说一句话，你跟着说出来，然后根据情况判分。</p>
+<p>英语课的好处就是妹子很多，可是去了几次，惊帆发现，凡是妹子，身边都有一个男的跟着，都是名花有主，多看几次后，绝影不再看了，所以英语课要么不去，要么去也继续看程序的书籍，但是在一天下午，他还是发现了一个落单的妹子，第一眼看到她的时候，发现她长得还蛮好看的，发现后惊帆就开始注意她，后来惊帆确实发现她就是一个人，因为他从来没有发现她身边有其他男人，甚至有些时候，惊帆悄悄的跟踪她到她的宿舍，也没见有其他人，因此惊帆确认这儿还有一个漏网之鱼，于是他决定追她，他开始换自己的位置，本来他是坐在最后面的最角落里的，这样在那里看书，不会被老师发现，慢慢的他开始调换座位，每次都朝她靠近，这时候小鸡的反应很大，大意就是有了美女就忘了兄弟的意思，但是他不管，后来终于在一次发作业的时候，他从她背后看到了她的名字，可是还是没有办法获得联系，于是他想到一个办法，去找辅导员，要课堂所有选课人的名单，然后看看联系方式，结果他被辅导员直接从办公司轰了出来。</p>
+<p>但是机会总是留给有准备的人的，那时候不是大家都玩人人网么，这些网络还有一个好处是可以根据学校，搜索人，于是他小心翼翼的输入了她的名字，果然出来了一个人，还是带头像的，确认后却是是她，于是他联系上了她，1个月后，他们在一起了，多年后，他给她说：“从我决定追你那一刻起，我就知道我已经成功了，因为我用心了，用心做事，是不会失败的”。他叫她丫头。</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/07/19/疯狂的程序员-三/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          疯狂的程序员(三)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/07/19/疯狂的程序员-一/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">疯狂的程序员(一)</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="疯狂的程序员-二" data-title="疯狂的程序员(二)" data-url="http://blog.bucry.com/2016/07/19/疯狂的程序员-二/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2017 惊帆
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>

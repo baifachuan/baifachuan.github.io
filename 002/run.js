@@ -13,7 +13,7 @@
 		setTimeout(function run(){
 			n += 1
 			if (container.innerHTML == message) {
-				duration = 2
+				duration = 1
 			}
 			container.innerHTML = message.substring(0, n)
 			styleTag.innerHTML = code.substring(0, n)
